@@ -89,4 +89,4 @@ last_updated: 2026-04-08
 
 ## 출처
 
-- [[kurose-ch2]] — Kurose 8판 2.4절
+- [kurose-ch2](../sources/kurose-ch2.md) — Kurose 8판 2.4절

@@ -159,8 +159,8 @@ cat /proc/pressure/cpu
 
 ## 관련 페이지
 
-- [[use-method]] — USE 방법론
-- [[perf]] — perf 도구 상세
-- [[bpf]] — BPF 기반 CPU 도구
-- [[memory-performance]] — 메모리 stall과 CPU 관계
-- [[cloud-performance]] — 가상화 환경 CPU 오버헤드
+- [use-method](use-method.md) — USE 방법론
+- [perf](../tools/perf.md) — perf 도구 상세
+- [bpf](../tools/bpf.md) — BPF 기반 CPU 도구
+- [memory-performance](memory-performance.md) — 메모리 stall과 CPU 관계
+- [cloud-performance](cloud-performance.md) — 가상화 환경 CPU 오버헤드

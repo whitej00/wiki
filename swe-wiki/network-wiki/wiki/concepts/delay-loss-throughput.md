@@ -85,4 +85,4 @@ Throughput = min{R_1, R_2, ..., R_N}
 
 ## 출처
 
-- [[kurose-ch1]] — Kurose 8판 1.4절
+- [kurose-ch1](../sources/kurose-ch1.md) — Kurose 8판 1.4절

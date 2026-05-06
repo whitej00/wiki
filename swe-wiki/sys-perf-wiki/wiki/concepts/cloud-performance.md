@@ -111,7 +111,7 @@ Firecracker는 독립 커널 → **BPF, perf 등 모든 커널 도구 동작**.
 
 ## 관련 페이지
 
-- [[use-method]] — USE 방법론
-- [[cpu-performance]] — CPU 가상화 오버헤드
-- [[network-performance]] — 네트워크 가상화
-- [[bpf]] — BPF 기반 컨테이너 분석
+- [use-method](use-method.md) — USE 방법론
+- [cpu-performance](cpu-performance.md) — CPU 가상화 오버헤드
+- [network-performance](network-performance.md) — 네트워크 가상화
+- [bpf](../tools/bpf.md) — BPF 기반 컨테이너 분석

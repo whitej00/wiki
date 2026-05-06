@@ -121,7 +121,7 @@ strace -c command   # 시스콜 요약 (오버헤드 높음)
 
 ## 관련 페이지
 
-- [[cpu-performance]] — CPU 프로파일링 상세
-- [[observability]] — 관측 도구
-- [[perf]] — perf 도구 상세
-- [[bpf]] — BPF 기반 분석
+- [cpu-performance](cpu-performance.md) — CPU 프로파일링 상세
+- [observability](observability.md) — 관측 도구
+- [perf](../tools/perf.md) — perf 도구 상세
+- [bpf](../tools/bpf.md) — BPF 기반 분석

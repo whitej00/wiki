@@ -126,7 +126,7 @@ iostat -sxz 1
 
 ## 관련 페이지
 
-- [[filesystem-performance]] — 파일 시스템 레이어
-- [[use-method]] — USE 방법론
-- [[cloud-performance]] — 가상 디스크 성능
-- [[benchmarking]] — 디스크 벤치마킹
+- [filesystem-performance](filesystem-performance.md) — 파일 시스템 레이어
+- [use-method](use-method.md) — USE 방법론
+- [cloud-performance](cloud-performance.md) — 가상 디스크 성능
+- [benchmarking](benchmarking.md) — 디스크 벤치마킹

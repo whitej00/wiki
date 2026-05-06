@@ -65,4 +65,4 @@ NAT 뒤의 서버에 접근하기 위한 기술:
 - **UPnP**: NAT 라우터에 포트 매핑을 자동 요청
 
 ## 출처
-- [[kurose-ch4]]
+- [kurose-ch4](../sources/kurose-ch4.md)

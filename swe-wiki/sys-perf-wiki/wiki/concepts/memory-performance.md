@@ -147,7 +147,7 @@ numactl --membind=0 --physcpubind=0 PID  # CPU+메모리 동시 바인딩
 
 ## 관련 페이지
 
-- [[use-method]] — USE 방법론
-- [[cpu-performance]] — CPU 캐시와 메모리 stall 관계
-- [[os-kernel]] — 커널 메모리 관리
-- [[cloud-performance]] — 가상화 환경 메모리 오버헤드
+- [use-method](use-method.md) — USE 방법론
+- [cpu-performance](cpu-performance.md) — CPU 캐시와 메모리 stall 관계
+- [os-kernel](os-kernel.md) — 커널 메모리 관리
+- [cloud-performance](cloud-performance.md) — 가상화 환경 메모리 오버헤드

@@ -42,4 +42,4 @@ Link:         [H_l| H_n | H_t | M]        ← 프레임
 
 ## 출처
 
-- [[kurose-ch1]] — Kurose 8판 1.5.2절
+- [kurose-ch1](../sources/kurose-ch1.md) — Kurose 8판 1.5.2절

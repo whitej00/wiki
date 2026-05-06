@@ -34,7 +34,7 @@ last_updated: 2026-04-09
 
 - **같은 변조 기법에서 SNR이 높을수록 BER은 낮다** — 송신 전력을 높이면 SNR이 올라가지만, 에너지 소비 증가 및 타 송신자 간섭 증가라는 부작용이 있다.
 - **같은 SNR에서 전송률이 높은 변조 기법은 BER이 높다** — 예: SNR 10 dB일 때 BPSK(1 Mbps)는 BER < 10⁻⁷이지만 QAM16(4 Mbps)은 BER ≈ 10⁻¹로 실용적이지 못하다.
-- **물리 계층 변조 기법을 채널 상태에 맞게 동적으로 선택할 수 있다** — adaptive modulation and coding, [[wifi-80211]]과 [[lte]] 모두 활용.
+- **물리 계층 변조 기법을 채널 상태에 맞게 동적으로 선택할 수 있다** — adaptive modulation and coding, [wifi-80211](../protocols/wifi-80211.md)과 [lte](../protocols/lte.md) 모두 활용.
 
 ## Hidden Terminal 문제
 
@@ -44,7 +44,7 @@ last_updated: 2026-04-09
 - 송신 신호 대비 수신 신호가 너무 약해 동시 감지 어려움
 - hidden terminal과 fading으로 인해 모든 충돌을 감지할 수 없음
 
-이 문제를 완화하기 위해 802.11은 **[[wifi-80211|RTS/CTS]]** 메커니즘을 사용한다.
+이 문제를 완화하기 위해 802.11은 **[RTS/CTS](../protocols/wifi-80211.md)** 메커니즘을 사용한다.
 
 ## Fading
 
@@ -61,4 +61,4 @@ last_updated: 2026-04-09
 
 ## 출처
 
-- [[kurose-ch7]] — Kurose 8판 7장 (7.2절)
+- [kurose-ch7](../sources/kurose-ch7.md) — Kurose 8판 7장 (7.2절)

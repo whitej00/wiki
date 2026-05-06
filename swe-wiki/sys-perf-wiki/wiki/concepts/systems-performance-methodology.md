@@ -97,7 +97,7 @@ IOPS 같은 다른 메트릭으로는 이런 계산이 불가능하다.
 
 ### USE Method
 
-→ [[use-method]] 참조. 모든 리소스에 대해 Utilization, Saturation, Errors 확인.
+→ [use-method](use-method.md) 참조. 모든 리소스에 대해 Utilization, Saturation, Errors 확인.
 
 ### RED Method
 
@@ -205,8 +205,8 @@ runtime = (hit_rate × hit_latency) + (miss_rate × miss_latency)
 
 ## 관련 페이지
 
-- [[use-method]] — USE 방법론 상세
-- [[observability]] — 관측 도구 개요
-- [[cpu-performance]] — CPU 성능 분석
-- [[memory-performance]] — 메모리 성능 분석
-- [[benchmarking]] — 벤치마킹 방법론
+- [use-method](use-method.md) — USE 방법론 상세
+- [observability](observability.md) — 관측 도구 개요
+- [cpu-performance](cpu-performance.md) — CPU 성능 분석
+- [memory-performance](memory-performance.md) — 메모리 성능 분석
+- [benchmarking](benchmarking.md) — 벤치마킹 방법론

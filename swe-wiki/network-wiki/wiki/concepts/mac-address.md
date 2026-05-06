@@ -36,7 +36,7 @@ last_updated: 2026-04-08
 
 - `FF-FF-FF-FF-FF-FF` (48비트 전부 1)
 - 이 주소가 목적지인 프레임은 LAN의 **모든 어댑터**가 수신하여 상위 계층으로 전달
-- [[ARP]] 질의, [[DHCP]] 요청 등에 사용
+- [ARP](../protocols/arp.md) 질의, [DHCP](../protocols/dhcp.md) 요청 등에 사용
 
 ## 왜 IP 주소와 별도로 필요한가
 
@@ -48,4 +48,4 @@ last_updated: 2026-04-08
 
 ## 출처
 
-- [[kurose-ch6]] — Kurose 8판 6장 (Section 6.4.1)
+- [kurose-ch6](../sources/kurose-ch6.md) — Kurose 8판 6장 (Section 6.4.1)

@@ -26,31 +26,31 @@ sources: [Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf]
 
 | 챕터 | 주제 | 위키 페이지 |
 |------|------|------------|
-| Ch1 | Introduction | [[systems-performance-methodology]] |
-| Ch2 | Methodologies | [[systems-performance-methodology]], [[use-method]] |
-| Ch3 | Operating Systems | [[os-kernel]] |
-| Ch4 | Observability Tools | [[observability]] |
+| Ch1 | Introduction | [systems-performance-methodology](../concepts/systems-performance-methodology.md) |
+| Ch2 | Methodologies | [systems-performance-methodology](../concepts/systems-performance-methodology.md), [use-method](../concepts/use-method.md) |
+| Ch3 | Operating Systems | [os-kernel](../concepts/os-kernel.md) |
+| Ch4 | Observability Tools | [observability](../concepts/observability.md) |
 
 ### Part II: 리소스별 분석
 
 | 챕터 | 주제 | 위키 페이지 |
 |------|------|------------|
-| Ch5 | Applications | [[application-performance]] |
-| Ch6 | CPUs | [[cpu-performance]] |
-| Ch7 | Memory | [[memory-performance]] |
-| Ch8 | File Systems | [[filesystem-performance]] |
-| Ch9 | Disks | [[disk-performance]] |
-| Ch10 | Network | [[network-performance]] |
-| Ch11 | Cloud Computing | [[cloud-performance]] |
-| Ch12 | Benchmarking | [[benchmarking]] |
+| Ch5 | Applications | [application-performance](../concepts/application-performance.md) |
+| Ch6 | CPUs | [cpu-performance](../concepts/cpu-performance.md) |
+| Ch7 | Memory | [memory-performance](../concepts/memory-performance.md) |
+| Ch8 | File Systems | [filesystem-performance](../concepts/filesystem-performance.md) |
+| Ch9 | Disks | [disk-performance](../concepts/disk-performance.md) |
+| Ch10 | Network | [network-performance](../concepts/network-performance.md) |
+| Ch11 | Cloud Computing | [cloud-performance](../concepts/cloud-performance.md) |
+| Ch12 | Benchmarking | [benchmarking](../concepts/benchmarking.md) |
 
 ### Part III: 고급 도구
 
 | 챕터 | 주제 | 위키 페이지 |
 |------|------|------------|
-| Ch13 | perf | [[perf]] |
-| Ch14 | Ftrace | [[ftrace]] |
-| Ch15 | BPF | [[bpf]] |
+| Ch13 | perf | [perf](../tools/perf.md) |
+| Ch14 | Ftrace | [ftrace](../tools/ftrace.md) |
+| Ch15 | BPF | [bpf](../tools/bpf.md) |
 | Ch16 | Case Study | (Netflix 사례) |
 
 ## 핵심 메시지

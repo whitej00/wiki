@@ -137,10 +137,10 @@ GBN의 불필요한 재전송 문제를 해결한다. 손실/오류가 의심되
 
 ## TCP에서의 적용
 
-[[TCP]]는 GBN과 SR의 **하이브리드**이다:
+[TCP](../protocols/tcp.md)는 GBN과 SR의 **하이브리드**이다:
 - GBN적: 누적 확인응답, 가장 작은 미확인 바이트(SendBase) 추적
 - SR적: 비순서 세그먼트 버퍼링, 손실 세그먼트만 재전송
 - Selective Acknowledgment(SACK, RFC 2018) 확장으로 비순서 수신 정보를 명시적으로 전달 가능
 
 ## 출처
-- [[kurose-ch3]]
+- [kurose-ch3](../sources/kurose-ch3.md)

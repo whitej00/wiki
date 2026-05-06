@@ -31,7 +31,7 @@ sources: [Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf]
 
 - CPU 프로파일링: 99Hz로 on-CPU 코드 경로 샘플 수집
 - **Flame Graph**로 시각화: 너비 = CPU 시간, 세로 = 코드 경로
-- 도구: [[perf]], `profile(8)` (BCC)
+- 도구: [perf](../tools/perf.md), `profile(8)` (BCC)
 
 ### 3. Tracing (트레이싱)
 
@@ -50,7 +50,7 @@ sources: [Systems.Performance.Enterprise.and.the.Cloud.2nd.Edition.2020.12.pdf]
 
 #### BPF 트레이싱
 - 커널 내에서 필터링/집계 수행 → 프로덕션 사용 가능한 낮은 오버헤드
-- 도구: [[bpf]] (BCC, bpftrace)
+- 도구: [bpf](../tools/bpf.md) (BCC, bpftrace)
 
 ### 4. Monitoring (모니터링)
 
@@ -122,7 +122,7 @@ top             # 종합 모니터링
 
 ## 관련 페이지
 
-- [[perf]] — Linux 표준 프로파일러
-- [[ftrace]] — Linux 표준 트레이서
-- [[bpf]] — BPF 트레이싱 (BCC, bpftrace)
-- [[systems-performance-methodology]] — 분석 방법론
+- [perf](../tools/perf.md) — Linux 표준 프로파일러
+- [ftrace](../tools/ftrace.md) — Linux 표준 트레이서
+- [bpf](../tools/bpf.md) — BPF 트레이싱 (BCC, bpftrace)
+- [systems-performance-methodology](systems-performance-methodology.md) — 분석 방법론

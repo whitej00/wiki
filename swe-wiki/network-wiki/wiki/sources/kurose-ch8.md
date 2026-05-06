@@ -93,11 +93,11 @@ created: 2026-04-09
 
 | 토픽 | 위키 페이지 | 유형 |
 |------|-----------|------|
-| 암호화 원리 | [[cryptography]] | 개념 |
-| 메시지 무결성 | [[message-integrity]] | 개념 |
-| 종단점 인증 | [[end-point-authentication]] | 개념 |
-| TLS | [[TLS]] | 프로토콜 |
-| IPsec/VPN | [[IPsec]] | 프로토콜 |
-| PGP | [[PGP]] | 프로토콜 |
-| 방화벽 | [[firewall]] | 개념 |
-| IDS/IPS | [[ids-ips]] | 개념 |
+| 암호화 원리 | [cryptography](../concepts/cryptography.md) | 개념 |
+| 메시지 무결성 | [message-integrity](../concepts/message-integrity.md) | 개념 |
+| 종단점 인증 | [end-point-authentication](../concepts/end-point-authentication.md) | 개념 |
+| TLS | [TLS](../protocols/tls.md) | 프로토콜 |
+| IPsec/VPN | [IPsec](../protocols/ipsec.md) | 프로토콜 |
+| PGP | [PGP](../protocols/pgp.md) | 프로토콜 |
+| 방화벽 | [firewall](../concepts/firewall.md) | 개념 |
+| IDS/IPS | [ids-ips](../concepts/ids-ips.md) | 개념 |

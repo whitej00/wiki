@@ -102,4 +102,4 @@ RSA와 달리 임의 길이 메시지 암호화는 불가하지만, **대칭 세
 
 ## 출처
 
-- [[kurose-ch8]] — Kurose 8판 8.2절
+- [kurose-ch8](../sources/kurose-ch8.md) — Kurose 8판 8.2절

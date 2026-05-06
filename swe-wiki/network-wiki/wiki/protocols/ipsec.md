@@ -118,4 +118,4 @@ Trudy가 R1-R2 사이에서 할 수 있는 것과 없는 것:
 
 ## 출처
 
-- [[kurose-ch8]] — Kurose 8판 8.7절
+- [kurose-ch8](../sources/kurose-ch8.md) — Kurose 8판 8.7절

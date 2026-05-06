@@ -68,4 +68,4 @@ DNS 리다이렉트를 활용한 요청 가로채기:
 
 ## 출처
 
-- [[kurose-ch2]] — Kurose 8판 2.6절
+- [kurose-ch2](../sources/kurose-ch2.md) — Kurose 8판 2.6절

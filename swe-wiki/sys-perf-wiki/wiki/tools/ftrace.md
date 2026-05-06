@@ -128,6 +128,6 @@ cat trace_pipe
 
 ## 관련 페이지
 
-- [[perf]] — perf 도구 (PMC, 프로파일링)
-- [[bpf]] — BPF 트레이싱
-- [[observability]] — 관측 도구 개요
+- [perf](perf.md) — perf 도구 (PMC, 프로파일링)
+- [bpf](bpf.md) — BPF 트레이싱
+- [observability](../concepts/observability.md) — 관측 도구 개요

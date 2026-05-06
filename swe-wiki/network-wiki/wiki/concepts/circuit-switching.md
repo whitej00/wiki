@@ -38,4 +38,4 @@ last_updated: 2026-04-08
 
 ## 출처
 
-- [[kurose-ch1]] — Kurose 8판 1.3.2절
+- [kurose-ch1](../sources/kurose-ch1.md) — Kurose 8판 1.3.2절

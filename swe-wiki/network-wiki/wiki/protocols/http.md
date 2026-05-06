@@ -64,7 +64,7 @@ Content-Type: text/html
 - 오리진 서버를 대신하여 HTTP 요청을 처리하는 네트워크 엔티티
 - 클라이언트 응답 시간 감소 + 기관 액세스 링크 트래픽 감소
 - **Conditional GET**: `If-Modified-Since` 헤더로 캐시 유효성 검증 → 변경 없으면 `304 Not Modified` (본문 없이 응답)
-- **CDN**(Content Distribution Network)이 웹 캐시를 대규모로 활용 → [[cdn]] 참조
+- **CDN**(Content Distribution Network)이 웹 캐시를 대규모로 활용 → [cdn](../concepts/cdn.md) 참조
 
 ## HTTP/2 (RFC 7540)
 
@@ -82,4 +82,4 @@ HTTP/1.1의 **HOL(Head-of-Line) 블로킹** 문제를 해결:
 
 ## 출처
 
-- [[kurose-ch2]] — Kurose 8판 2.2절, 2.2.6절
+- [kurose-ch2](../sources/kurose-ch2.md) — Kurose 8판 2.2절, 2.2.6절

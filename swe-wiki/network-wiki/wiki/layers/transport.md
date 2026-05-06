@@ -12,7 +12,7 @@ last_updated: 2026-04-08
 
 ## 역할
 
-네트워크 계층(IP)이 **호스트 간(host-to-host)** 통신을 제공하는 것에 반해, 전송 계층은 이를 **프로세스 간(process-to-process)** 통신으로 확장한다. 이를 위해 [[multiplexing-demultiplexing|다중화/역다중화]]를 수행한다.
+네트워크 계층(IP)이 **호스트 간(host-to-host)** 통신을 제공하는 것에 반해, 전송 계층은 이를 **프로세스 간(process-to-process)** 통신으로 확장한다. 이를 위해 [다중화/역다중화](../concepts/multiplexing-demultiplexing.md)를 수행한다.
 
 전송 계층 프로토콜은 **종단 시스템(End System)**에서만 동작한다. 중간 라우터는 전송 계층 세그먼트의 필드를 검사하지 않으며, 네트워크 계층 데이터그램의 필드만 처리한다.
 
@@ -28,18 +28,18 @@ last_updated: 2026-04-08
 
 | 프로토콜 | 특성 | 서비스 |
 |----------|------|--------|
-| [[TCP]] | 연결 지향, 신뢰적 | 신뢰적 전송, [[flow-control\|흐름 제어]], [[congestion-control\|혼잡 제어]] |
-| [[UDP]] | 비연결, 비신뢰적 | 다중화/역다중화, 오류 검출(체크섬)만 제공 |
-| [[QUIC]] | UDP 기반 애플리케이션 계층 프로토콜 | 연결 지향, 암호화, 스트림 멀티플렉싱, 혼잡 제어 |
+| [TCP](../protocols/tcp.md) | 연결 지향, 신뢰적 | 신뢰적 전송, [흐름 제어](../concepts/flow-control.md), [혼잡 제어](../concepts/congestion-control.md) |
+| [UDP](../protocols/udp.md) | 비연결, 비신뢰적 | 다중화/역다중화, 오류 검출(체크섬)만 제공 |
+| [QUIC](../protocols/quic.md) | UDP 기반 애플리케이션 계층 프로토콜 | 연결 지향, 암호화, 스트림 멀티플렉싱, 혼잡 제어 |
 
 TCP와 UDP 모두 제공하는 최소 서비스:
-1. **프로세스-프로세스 데이터 전달** ([[multiplexing-demultiplexing]])
+1. **프로세스-프로세스 데이터 전달** ([multiplexing-demultiplexing](../concepts/multiplexing-demultiplexing.md))
 2. **오류 검출** (체크섬)
 
 TCP가 추가로 제공하는 서비스:
-1. **[[reliable-data-transfer|신뢰적 데이터 전송]]** — 순서번호, 확인응답, 타이머, 재전송
-2. **[[flow-control|흐름 제어]]** — 수신자 버퍼 오버플로 방지
-3. **[[congestion-control|혼잡 제어]]** — 네트워크 혼잡 방지 (인터넷 전체의 이익)
+1. **[신뢰적 데이터 전송](../concepts/reliable-data-transfer.md)** — 순서번호, 확인응답, 타이머, 재전송
+2. **[흐름 제어](../concepts/flow-control.md)** — 수신자 버퍼 오버플로 방지
+3. **[혼잡 제어](../concepts/congestion-control.md)** — 네트워크 혼잡 방지 (인터넷 전체의 이익)
 
 ## 용어
 
@@ -48,17 +48,17 @@ TCP가 추가로 제공하는 서비스:
 
 ## 핵심 개념
 
-- [[multiplexing-demultiplexing]] — 프로세스 간 데이터 전달의 기본 메커니즘
-- [[reliable-data-transfer]] — 비신뢰 채널 위에서 신뢰적 전송을 구축하는 원리
-- [[flow-control]] — 송신자-수신자 간 속도 매칭
-- [[congestion-control]] — 네트워크 혼잡 감지 및 대응
-- [[end-to-end-principle]] — 종단간 설계 원칙
+- [multiplexing-demultiplexing](../concepts/multiplexing-demultiplexing.md) — 프로세스 간 데이터 전달의 기본 메커니즘
+- [reliable-data-transfer](../concepts/reliable-data-transfer.md) — 비신뢰 채널 위에서 신뢰적 전송을 구축하는 원리
+- [flow-control](../concepts/flow-control.md) — 송신자-수신자 간 속도 매칭
+- [congestion-control](../concepts/congestion-control.md) — 네트워크 혼잡 감지 및 대응
+- [end-to-end-principle](../concepts/end-to-end-principle.md) — 종단간 설계 원칙
 
 ## 포함 프로토콜
 
-- [[TCP]] — 연결 지향 신뢰적 전송 프로토콜
-- [[UDP]] — 비연결형 최소 기능 전송 프로토콜
-- [[QUIC]] — UDP 위에 구축된 차세대 전송 기능 프로토콜
+- [TCP](../protocols/tcp.md) — 연결 지향 신뢰적 전송 프로토콜
+- [UDP](../protocols/udp.md) — 비연결형 최소 기능 전송 프로토콜
+- [QUIC](../protocols/quic.md) — UDP 위에 구축된 차세대 전송 기능 프로토콜
 
 ## 출처
-- [[kurose-ch3]]
+- [kurose-ch3](../sources/kurose-ch3.md)

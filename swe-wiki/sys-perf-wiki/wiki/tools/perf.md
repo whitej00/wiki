@@ -109,7 +109,7 @@ perf kvm stat live    # VM exit 유형별 통계
 
 ## 관련 페이지
 
-- [[cpu-performance]] — CPU 프로파일링
-- [[ftrace]] — Linux 표준 트레이서
-- [[bpf]] — BPF 트레이싱
-- [[observability]] — 관측 도구 개요
+- [cpu-performance](../concepts/cpu-performance.md) — CPU 프로파일링
+- [ftrace](ftrace.md) — Linux 표준 트레이서
+- [bpf](bpf.md) — BPF 트레이싱
+- [observability](../concepts/observability.md) — 관측 도구 개요

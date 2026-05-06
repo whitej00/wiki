@@ -79,7 +79,7 @@ Correspondent → HSS 조회 → Visited Network Gateway → Mobile Device
 
 ## 4G/5G Mobility in Practice
 
-[[lte]] 참조. 실제 4G/5G 이동성은 4단계로 구성:
+[lte](../protocols/lte.md) 참조. 실제 4G/5G 이동성은 4단계로 구성:
 
 ### 1. Base Station Association
 모바일 장치가 방문 네트워크의 기지국과 연관. 모든 주파수에서 동기 신호 탐색 → 기지국 선택 → IMSI 제공.
@@ -148,4 +148,4 @@ Mobile IP의 세 구성요소:
 
 ## 출처
 
-- [[kurose-ch7]] — Kurose 8판 7장 (7.5, 7.6, 7.7절)
+- [kurose-ch7](../sources/kurose-ch7.md) — Kurose 8판 7장 (7.5, 7.6, 7.7절)

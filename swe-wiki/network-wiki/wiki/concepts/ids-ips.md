@@ -87,4 +87,4 @@ alert icmp $EXTERNAL_NET any -> $HOME_NET any
 
 ## 출처
 
-- [[kurose-ch8]] — Kurose 8판 8.9절
+- [kurose-ch8](../sources/kurose-ch8.md) — Kurose 8판 8.9절

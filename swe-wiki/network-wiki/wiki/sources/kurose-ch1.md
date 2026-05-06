@@ -26,26 +26,26 @@ last_updated: 2026-04-08
 - **물리 매체**: 꼬임 쌍선(UTP), 동축 케이블, 광섬유, 지상파 라디오, 위성 라디오
 
 ### 1.3 네트워크 코어
-- **[[packet-switching|패킷 교환(Packet Switching)]]**: 저장 후 전달(store-and-forward), 큐잉 지연과 패킷 손실, 포워딩 테이블과 라우팅 프로토콜
-- **[[circuit-switching|회선 교환(Circuit Switching)]]**: FDM과 TDM, 전용 자원 예약
+- **[패킷 교환(Packet Switching)](../concepts/packet-switching.md)**: 저장 후 전달(store-and-forward), 큐잉 지연과 패킷 손실, 포워딩 테이블과 라우팅 프로토콜
+- **[회선 교환(Circuit Switching)](../concepts/circuit-switching.md)**: FDM과 TDM, 전용 자원 예약
 - **패킷 교환 vs 회선 교환**: 패킷 교환이 통계적 다중화로 더 효율적 (3배 이상의 사용자 지원 가능)
-- **[[internet-structure|네트워크의 네트워크]]**: ISP 계층 구조 (access ISP → regional ISP → tier-1 ISP), IXP, 피어링, 콘텐츠 제공자 네트워크
+- **[네트워크의 네트워크](../concepts/internet-structure.md)**: ISP 계층 구조 (access ISP → regional ISP → tier-1 ISP), IXP, 피어링, 콘텐츠 제공자 네트워크
 
-### 1.4 [[delay-loss-throughput|지연, 손실, 처리량]]
+### 1.4 [지연, 손실, 처리량](../concepts/delay-loss-throughput.md)
 - **노드 지연 4요소**: 처리 지연(d_proc), 큐잉 지연(d_queue), 전송 지연(d_trans = L/R), 전파 지연(d_prop = d/s)
 - **트래픽 강도(Traffic Intensity)**: La/R — 1에 가까워지면 큐잉 지연 급증
 - **종단 간 지연**: d_end-end = N(d_proc + d_trans + d_prop)
 - **Traceroute**: 경로 상의 라우터와 RTT 측정
 - **처리량(Throughput)**: 병목 링크(bottleneck link)에 의해 결정, min{R_s, R_c}
 
-### 1.5 [[protocol-layers|프로토콜 계층]]과 서비스 모델
+### 1.5 [프로토콜 계층](../concepts/protocol-layers.md)과 서비스 모델
 - **인터넷 프로토콜 스택 (5계층)**:
-  1. [[layers/application|Application]] — 메시지 ([[HTTP]], [[SMTP]], [[DNS]])
-  2. [[layers/transport|Transport]] — 세그먼트 ([[TCP]], [[UDP]])
-  3. [[layers/network|Network]] — 데이터그램 (IP, 라우팅 프로토콜)
-  4. [[layers/link|Link]] — 프레임 ([[Ethernet|이더넷]], WiFi)
+  1. [Application](../layers/application.md) — 메시지 ([HTTP](../protocols/http.md), [SMTP](../protocols/smtp.md), [DNS](../protocols/dns.md))
+  2. [Transport](../layers/transport.md) — 세그먼트 ([TCP](../protocols/tcp.md), [UDP](../protocols/udp.md))
+  3. [Network](../layers/network.md) — 데이터그램 (IP, 라우팅 프로토콜)
+  4. [Link](../layers/link.md) — 프레임 ([이더넷](../protocols/ethernet.md), WiFi)
   5. Physical — 비트
-- **[[encapsulation|캡슐화(Encapsulation)]]**: 각 계층이 헤더를 추가하며 하위 계층으로 전달
+- **[캡슐화(Encapsulation)](../concepts/encapsulation.md)**: 각 계층이 헤더를 추가하며 하위 계층으로 전달
 
 ### 1.6 네트워크 보안 위협
 - 멀웨어(바이러스, 웜), 봇넷
@@ -62,12 +62,12 @@ last_updated: 2026-04-08
 
 ## 위키에 반영된 페이지
 
-- [[packet-switching]] — 패킷 교환 개념
-- [[circuit-switching]] — 회선 교환 개념
-- [[protocol-layers]] — 프로토콜 계층 구조
-- [[encapsulation]] — 캡슐화
-- [[delay-loss-throughput]] — 지연, 손실, 처리량
-- [[internet-structure]] — 인터넷 구조 (ISP 계층)
+- [packet-switching](../concepts/packet-switching.md) — 패킷 교환 개념
+- [circuit-switching](../concepts/circuit-switching.md) — 회선 교환 개념
+- [protocol-layers](../concepts/protocol-layers.md) — 프로토콜 계층 구조
+- [encapsulation](../concepts/encapsulation.md) — 캡슐화
+- [delay-loss-throughput](../concepts/delay-loss-throughput.md) — 지연, 손실, 처리량
+- [internet-structure](../concepts/internet-structure.md) — 인터넷 구조 (ISP 계층)
 
 ## 출처
 

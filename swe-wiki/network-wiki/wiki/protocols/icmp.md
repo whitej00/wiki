@@ -66,7 +66,7 @@ IPv6용 ICMP [RFC 4443]:
 
 ## Source Quench (Type 4)
 
-원래 혼잡 제어를 위해 설계됨 — 혼잡한 라우터가 송신 호스트에게 전송률 감소를 요청. 그러나 TCP가 자체 [[congestion-control|혼잡 제어]] 메커니즘을 가지고 있고, [[IPv4|ECN]] 비트가 혼잡 시그널링에 사용되면서 현재는 거의 사용되지 않는다.
+원래 혼잡 제어를 위해 설계됨 — 혼잡한 라우터가 송신 호스트에게 전송률 감소를 요청. 그러나 TCP가 자체 [혼잡 제어](../concepts/congestion-control.md) 메커니즘을 가지고 있고, [ECN](ipv4.md) 비트가 혼잡 시그널링에 사용되면서 현재는 거의 사용되지 않는다.
 
 ## 출처
-- [[kurose-ch5]]
+- [kurose-ch5](../sources/kurose-ch5.md)

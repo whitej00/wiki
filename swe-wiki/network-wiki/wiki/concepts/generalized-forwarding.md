@@ -68,9 +68,9 @@ Match: IP Src=10.3.*.*, IP Dst=10.2.0.3  →  Action: Forward(3)
 
 ## SDN의 의의
 
-- 포워딩, 로드 밸런싱, 방화벽, [[NAT]] 등 과거 별도 하드웨어(미들박스)로 구현하던 기능을 **단일 프로그래밍 추상화**로 통합
+- 포워딩, 로드 밸런싱, 방화벽, [NAT](nat.md) 등 과거 별도 하드웨어(미들박스)로 구현하던 기능을 **단일 프로그래밍 추상화**로 통합
 - 네트워크 동작을 소프트웨어로 정의 → 유연하고 빠른 혁신
 - **P4**(Programming Protocol-independent Packet Processors): 더 풍부한 프로그래밍 언어로 라인 레이트 패킷 처리
 
 ## 출처
-- [[kurose-ch4]]
+- [kurose-ch4](../sources/kurose-ch4.md)

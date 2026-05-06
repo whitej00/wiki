@@ -29,7 +29,7 @@ last_updated: 2026-04-08
 
 ### 3. 출력 포트 (Output Port)
 - 스위칭 패브릭에서 받은 패킷을 **큐잉(버퍼 관리)** → 링크 계층 처리 → 라인 종단(전송)
-- [[packet-scheduling|패킷 스케줄링]] 수행
+- [패킷 스케줄링](packet-scheduling.md) 수행
 
 ### 4. 라우팅 프로세서 (Routing Processor)
 - **제어 플레인** 기능 수행: 라우팅 프로토콜 실행, 라우팅 테이블 유지, 포워딩 테이블 계산
@@ -68,4 +68,4 @@ last_updated: 2026-04-08
 - 제어 플레인 (라우팅 프로세서): **소프트웨어** — CPU
 
 ## 출처
-- [[kurose-ch4]]
+- [kurose-ch4](../sources/kurose-ch4.md)

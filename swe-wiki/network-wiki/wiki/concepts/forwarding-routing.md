@@ -21,11 +21,11 @@ last_updated: 2026-04-08
 
 ### 목적지 기반 포워딩 (Destination-based)
 
-목적지 IP 주소만으로 출력 포트를 결정한다. [[ip-addressing|최장 프리픽스 매칭(Longest Prefix Matching)]]을 사용.
+목적지 IP 주소만으로 출력 포트를 결정한다. [최장 프리픽스 매칭(Longest Prefix Matching)](ip-addressing.md)을 사용.
 
 ### 일반화된 포워딩 (Generalized Forwarding)
 
-→ 상세: [[generalized-forwarding]]
+→ 상세: [generalized-forwarding](generalized-forwarding.md)
 
 목적지 주소뿐 아니라 다양한 헤더 필드(출발지 IP, 포트, 프로토콜 등)를 기반으로 포워딩/드롭/수정 등의 동작을 수행. SDN과 OpenFlow가 이 방식을 구현.
 
@@ -58,4 +58,4 @@ last_updated: 2026-04-08
 - **라우팅** = 출발 전 지도를 보고 전체 경로를 계획하는 것
 
 ## 출처
-- [[kurose-ch4]]
+- [kurose-ch4](../sources/kurose-ch4.md)

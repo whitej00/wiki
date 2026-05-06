@@ -23,17 +23,17 @@ Kurose 교재에서는 인터넷을 5개 계층으로 구분한다:
 | 계층 | PDU | 역할 | 대표 프로토콜 |
 |---|---|---|---|
 | Application | 메시지 | 네트워크 애플리케이션 | HTTP, SMTP, DNS, FTP |
-| Transport | 세그먼트 | 프로세스 간 통신 | [[TCP]], [[UDP]] |
-| Network | 데이터그램 | 호스트 간 라우팅 | [[IP]] |
+| Transport | 세그먼트 | 프로세스 간 통신 | [TCP](protocols/tcp.md), [UDP](protocols/udp.md) |
+| Network | 데이터그램 | 호스트 간 라우팅 | [IP](#IP) |
 | Link | 프레임 | 인접 노드 간 전달 | 이더넷, WiFi |
 | Physical | 비트 | 물리 매체 위 비트 전송 | 매체 종속적 |
 
-자세한 내용은 [[protocol-layers]] 참조.
+자세한 내용은 [protocol-layers](concepts/protocol-layers.md) 참조.
 
 ## 핵심 개념
 
-- [[packet-switching]] — 패킷 교환: 인터넷의 데이터 전달 방식
-- [[circuit-switching]] — 회선 교환: 전통적 전화망 방식
-- [[encapsulation]] — 캡슐화: 계층 간 데이터 전달 메커니즘
-- [[delay-loss-throughput]] — 지연, 손실, 처리량: 네트워크 성능 지표
-- [[internet-structure]] — 인터넷 구조: ISP 계층과 상호 연결
+- [packet-switching](concepts/packet-switching.md) — 패킷 교환: 인터넷의 데이터 전달 방식
+- [circuit-switching](concepts/circuit-switching.md) — 회선 교환: 전통적 전화망 방식
+- [encapsulation](concepts/encapsulation.md) — 캡슐화: 계층 간 데이터 전달 메커니즘
+- [delay-loss-throughput](concepts/delay-loss-throughput.md) — 지연, 손실, 처리량: 네트워크 성능 지표
+- [internet-structure](concepts/internet-structure.md) — 인터넷 구조: ISP 계층과 상호 연결

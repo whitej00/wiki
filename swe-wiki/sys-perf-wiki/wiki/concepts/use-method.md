@@ -102,8 +102,8 @@ Netflix Atlas 모니터링에서 각 마이크로서비스에 대해:
 
 ## 관련 페이지
 
-- [[systems-performance-methodology]] — 전체 방법론 개요
-- [[cpu-performance]] — CPU USE 적용
-- [[memory-performance]] — Memory USE 적용
-- [[disk-performance]] — Disk USE 적용
-- [[network-performance]] — Network USE 적용
+- [systems-performance-methodology](systems-performance-methodology.md) — 전체 방법론 개요
+- [cpu-performance](cpu-performance.md) — CPU USE 적용
+- [memory-performance](memory-performance.md) — Memory USE 적용
+- [disk-performance](disk-performance.md) — Disk USE 적용
+- [network-performance](network-performance.md) — Network USE 적용

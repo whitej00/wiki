@@ -20,7 +20,7 @@ last_updated: 2026-04-09
 
 | | Data Plane | Control Plane |
 |---|-----------|---------------|
-| **기능** | [[forwarding-routing\|포워딩]] — 입력→출력 포트 전달 | [[forwarding-routing\|라우팅]] — 종단간 경로 결정 |
+| **기능** | [포워딩](../concepts/forwarding-routing.md) — 입력→출력 포트 전달 | [라우팅](../concepts/forwarding-routing.md) — 종단간 경로 결정 |
 | **범위** | 라우터 로컬 | 네트워크 전체 |
 | **시간 척도** | 나노초 | 초 |
 | **구현** | 하드웨어 | 소프트웨어 |
@@ -41,27 +41,27 @@ last_updated: 2026-04-09
 ## 핵심 개념
 
 ### Data Plane (Ch.4)
-- [[forwarding-routing]] — 포워딩과 라우팅의 구분, data/control plane
-- [[router-architecture]] — 라우터 내부 구조
-- [[ip-addressing]] — IP 주소 체계 (서브넷, CIDR)
-- [[packet-scheduling]] — 패킷 스케줄링 알고리즘
-- [[generalized-forwarding]] — SDN과 OpenFlow 데이터 플레인
-- [[nat]] — 네트워크 주소 변환
-- [[middleboxes]] — 미들박스와 NFV
+- [forwarding-routing](../concepts/forwarding-routing.md) — 포워딩과 라우팅의 구분, data/control plane
+- [router-architecture](../concepts/router-architecture.md) — 라우터 내부 구조
+- [ip-addressing](../concepts/ip-addressing.md) — IP 주소 체계 (서브넷, CIDR)
+- [packet-scheduling](../concepts/packet-scheduling.md) — 패킷 스케줄링 알고리즘
+- [generalized-forwarding](../concepts/generalized-forwarding.md) — SDN과 OpenFlow 데이터 플레인
+- [nat](../concepts/nat.md) — 네트워크 주소 변환
+- [middleboxes](../concepts/middleboxes.md) — 미들박스와 NFV
 
 ### Control Plane (Ch.5)
-- [[routing-algorithms]] — 라우팅 알고리즘 (LS/Dijkstra, DV/Bellman-Ford)
-- [[sdn-control-plane]] — SDN 컨트롤 플레인 (컨트롤러, OpenFlow 프로토콜, OpenDaylight/ONOS)
-- [[network-management]] — 네트워크 관리 (SNMP/MIB, NETCONF/YANG)
+- [routing-algorithms](../concepts/routing-algorithms.md) — 라우팅 알고리즘 (LS/Dijkstra, DV/Bellman-Ford)
+- [sdn-control-plane](../concepts/sdn-control-plane.md) — SDN 컨트롤 플레인 (컨트롤러, OpenFlow 프로토콜, OpenDaylight/ONOS)
+- [network-management](../concepts/network-management.md) — 네트워크 관리 (SNMP/MIB, NETCONF/YANG)
 
 ## 포함 프로토콜
 
-- [[IPv4]] — 인터넷의 핵심 네트워크 계층 프로토콜 (32비트 주소)
-- [[IPv6]] — 차세대 IP (128비트 주소)
-- [[DHCP]] — 호스트에 IP 주소 자동 할당
-- [[ICMP]] — 오류 보고·진단 (ping, traceroute)
-- [[OSPF]] — Intra-AS 라우팅 (LS 기반)
-- [[BGP]] — Inter-AS 라우팅 (인터넷의 접착제)
+- [IPv4](../protocols/ipv4.md) — 인터넷의 핵심 네트워크 계층 프로토콜 (32비트 주소)
+- [IPv6](../protocols/ipv6.md) — 차세대 IP (128비트 주소)
+- [DHCP](../protocols/dhcp.md) — 호스트에 IP 주소 자동 할당
+- [ICMP](../protocols/icmp.md) — 오류 보고·진단 (ping, traceroute)
+- [OSPF](../protocols/ospf.md) — Intra-AS 라우팅 (LS 기반)
+- [BGP](../protocols/bgp.md) — Inter-AS 라우팅 (인터넷의 접착제)
 
 ## IP 모래시계 (IP Hourglass)
 
@@ -98,11 +98,11 @@ last_updated: 2026-04-09
 
 ## 네트워크 계층 보안
 
-- [[IPsec]] — IP 데이터그램 수준에서 기밀성, 출처 인증, 무결성, 재생 공격 방지를 제공 ("blanket coverage"). VPN의 핵심 기술
-- [[firewall]] — 조직 네트워크와 인터넷 사이에서 패킷 필터링 (전통적/상태기반/애플리케이션 게이트웨이)
-- [[ids-ips]] — 심층 패킷 검사로 침입 탐지/방지 (시그니처 기반/이상 기반)
+- [IPsec](../protocols/ipsec.md) — IP 데이터그램 수준에서 기밀성, 출처 인증, 무결성, 재생 공격 방지를 제공 ("blanket coverage"). VPN의 핵심 기술
+- [firewall](../concepts/firewall.md) — 조직 네트워크와 인터넷 사이에서 패킷 필터링 (전통적/상태기반/애플리케이션 게이트웨이)
+- [ids-ips](../concepts/ids-ips.md) — 심층 패킷 검사로 침입 탐지/방지 (시그니처 기반/이상 기반)
 
 ## 출처
-- [[kurose-ch4]]
-- [[kurose-ch5]]
-- [[kurose-ch8]]
+- [kurose-ch4](../sources/kurose-ch4.md)
+- [kurose-ch5](../sources/kurose-ch5.md)
+- [kurose-ch8](../sources/kurose-ch8.md)

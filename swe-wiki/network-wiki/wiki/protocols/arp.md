@@ -13,7 +13,7 @@ last_updated: 2026-04-08
 
 ## 왜 필요한가
 
-프레임을 전송하려면 목적지의 [[mac-address|MAC 주소]]가 필요하다. 하지만 상위 계층은 IP 주소만 알고 있다. ARP는 이 간극을 메우는 역할을 한다.
+프레임을 전송하려면 목적지의 [MAC 주소](../concepts/mac-address.md)가 필요하다. 하지만 상위 계층은 IP 주소만 알고 있다. ARP는 이 간극을 메우는 역할을 한다.
 
 > DNS가 호스트 이름 → IP 주소를 인터넷 전역에서 해석하는 반면, ARP는 IP 주소 → MAC 주소를 **같은 서브넷 내에서만** 해석한다.
 
@@ -66,4 +66,4 @@ ARP는 분류가 애매한 프로토콜이다:
 
 ## 출처
 
-- [[kurose-ch6]] — Kurose 8판 6장 (Section 6.4.1)
+- [kurose-ch6](../sources/kurose-ch6.md) — Kurose 8판 6장 (Section 6.4.1)

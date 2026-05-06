@@ -16,14 +16,14 @@ last_updated: 2026-04-08
 
 ## 핵심 내용
 
-### 3.1 [[layers/transport|전송 계층]] 소개
+### 3.1 [전송 계층](../layers/transport.md) 소개
 - 전송 계층은 **논리적 통신(Logical Communication)**을 애플리케이션 프로세스 간에 제공
 - 네트워크 계층이 호스트 간 통신을 제공하는 것과 구별됨
 - 전송 계층 프로토콜은 종단 시스템(end system)에서만 동작, 중간 라우터는 관여하지 않음
 - IP는 **최선형 전달 서비스(Best-effort Delivery Service)** — 신뢰성 보장 없음
-- 인터넷의 전송 프로토콜: **[[TCP]]**(신뢰적, 연결 지향)와 **[[UDP]]**(비신뢰적, 비연결)
+- 인터넷의 전송 프로토콜: **[TCP](../protocols/tcp.md)**(신뢰적, 연결 지향)와 **[UDP](../protocols/udp.md)**(비신뢰적, 비연결)
 
-### 3.2 [[multiplexing-demultiplexing|다중화와 역다중화]](Multiplexing & Demultiplexing)
+### 3.2 [다중화와 역다중화](../concepts/multiplexing-demultiplexing.md)(Multiplexing & Demultiplexing)
 - 호스트-호스트 전달을 프로세스-프로세스 전달로 확장하는 핵심 기능
 - **다중화**: 소켓에서 데이터를 모아 세그먼트 생성 후 네트워크 계층으로 전달
 - **역다중화**: 수신된 세그먼트를 올바른 소켓으로 전달
@@ -31,15 +31,15 @@ last_updated: 2026-04-08
 - UDP 소켓 식별: **(목적지 IP, 목적지 포트)** 2-tuple
 - TCP 소켓 식별: **(출발지 IP, 출발지 포트, 목적지 IP, 목적지 포트)** 4-tuple
 
-### 3.3 비연결형 전송: [[UDP]]
-- RFC 768, 최소 기능의 전송 프로토콜 ([[multiplexing-demultiplexing|다중화/역다중화]] + 오류 검출)
+### 3.3 비연결형 전송: [UDP](../protocols/udp.md)
+- RFC 768, 최소 기능의 전송 프로토콜 ([다중화/역다중화](../concepts/multiplexing-demultiplexing.md) + 오류 검출)
 - 비연결형(Connectionless) — 핸드셰이크 없이 즉시 전송
 - UDP 선호 이유: (1) 전송 시점/속도 제어 가능, (2) 연결 설정 지연 없음, (3) 연결 상태 불필요, (4) 작은 헤더 오버헤드(8바이트 vs TCP 20바이트)
 - **UDP 세그먼트 구조**: 출발지 포트(16비트), 목적지 포트(16비트), 길이(16비트), 체크섬(16비트)
 - **체크섬**: 16비트 워드의 합의 1의 보수. **End-to-end 원칙**의 예시
 - UDP 사용 애플리케이션: DNS, SNMP, NFS, 실시간 멀티미디어
 
-### 3.4 [[reliable-data-transfer|신뢰적 데이터 전송 원리]]
+### 3.4 [신뢰적 데이터 전송 원리](../concepts/reliable-data-transfer.md)
 - 네트워킹의 가장 근본적 문제 중 하나
 - **rdt1.0**: 완전 신뢰 채널 — 오류 처리 불필요
 - **rdt2.0**: 비트 오류 채널 — **ARQ**(Automatic Repeat reQuest): 체크섬 + ACK/NAK + 재전송
@@ -50,7 +50,7 @@ last_updated: 2026-04-08
 - **Go-Back-N (GBN)**: 윈도우 크기 N, **누적 확인응답(Cumulative ACK)**, 타임아웃 시 윈도우 내 전체 재전송, 수신자는 순서 맞지 않는 패킷 폐기
 - **Selective Repeat (SR)**: 개별 확인응답, 손실된 패킷만 재전송, 수신자가 비순서 패킷 버퍼링. 윈도우 크기 ≤ 순서번호 공간/2
 
-### 3.5 연결 지향 전송: [[TCP]]
+### 3.5 연결 지향 전송: [TCP](../protocols/tcp.md)
 - RFC 793, RFC 5681 등
 - **연결 지향(Connection-oriented)**, **전이중(Full-duplex)**, **점대점(Point-to-point)**
 - **MSS**(Maximum Segment Size): 세그먼트 최대 데이터 크기. **MTU**(Maximum Transmission Unit)에서 TCP/IP 헤더(40바이트) 제외. 일반적 MSS = 1460바이트
@@ -61,7 +61,7 @@ last_updated: 2026-04-08
 - **신뢰적 전송**: 단일 재전송 타이머, 가장 오래된 미확인 세그먼트 재전송. 타임아웃 시 간격 2배(지수적 백오프)
 - **Fast Retransmit**: 3개 중복 ACK 수신 시 타이머 만료 전 재전송
 - TCP는 **GBN과 SR의 하이브리드**. Selective Acknowledgment(SACK, RFC 2018) 확장 가능
-- **[[flow-control|흐름 제어(Flow Control)]]**: 수신 윈도우(rwnd)로 송신자 전송률 제한. rwnd = RcvBuffer − (LastByteRcvd − LastByteRead). LastByteSent − LastByteAcked ≤ rwnd
+- **[흐름 제어(Flow Control)](../concepts/flow-control.md)**: 수신 윈도우(rwnd)로 송신자 전송률 제한. rwnd = RcvBuffer − (LastByteRcvd − LastByteRead). LastByteSent − LastByteAcked ≤ rwnd
 - **연결 관리**: 3-way handshake (SYN → SYNACK → ACK). 연결 해제: FIN → ACK → FIN → ACK, TIME_WAIT 상태
 - **TCP 상태 전이**: CLOSED → SYN_SENT → ESTABLISHED → FIN_WAIT_1 → FIN_WAIT_2 → TIME_WAIT → CLOSED (클라이언트). CLOSED → LISTEN → SYN_RCVD → ESTABLISHED → CLOSE_WAIT → LAST_ACK → CLOSED (서버)
 - **SYN Flood 공격**: 대량 SYN 전송으로 서버 자원 고갈. **SYN 쿠키** 방어: 서버가 연결 상태 저장 없이 해시 기반 ISN으로 SYNACK 응답
@@ -74,7 +74,7 @@ last_updated: 2026-04-08
 - 시나리오 3: 다중 홉, 처리량이 0으로 감소 가능 (congestion collapse)
 - **접근 방식**: End-to-end 혼잡 제어 (TCP) vs Network-assisted 혼잡 제어 (ATM ABR, ECN)
 
-### 3.7 [[congestion-control|TCP 혼잡 제어]]
+### 3.7 [TCP 혼잡 제어](../concepts/congestion-control.md)
 - **혼잡 윈도우(cwnd)**: 미확인 데이터량 제한. 전송률 ≈ cwnd/RTT
 - 손실 이벤트 = 타임아웃 또는 3개 중복 ACK
 - **Self-clocking**: ACK 도착 속도에 맞춰 윈도우 증가
@@ -94,18 +94,18 @@ last_updated: 2026-04-08
 ### 3.8 전송 계층 기능의 진화
 - TCP/UDP 외 새로운 전송 프로토콜 등장
 - TCP 변종: CUBIC, DCTCP, CTCP, BBR 등
-- **[[QUIC]]**(Quick UDP Internet Connections): [[UDP]] 기반 애플리케이션 계층 프로토콜. 연결 지향 + 암호화, 스트림 멀티플렉싱, 스트림별 [[reliable-data-transfer|신뢰적 전송]](HOL 블로킹 해결), TCP NewReno 기반 [[congestion-control|혼잡 제어]]. HTTP/3의 기반
+- **[QUIC](../protocols/quic.md)**(Quick UDP Internet Connections): [UDP](../protocols/udp.md) 기반 애플리케이션 계층 프로토콜. 연결 지향 + 암호화, 스트림 멀티플렉싱, 스트림별 [신뢰적 전송](../concepts/reliable-data-transfer.md)(HOL 블로킹 해결), TCP NewReno 기반 [혼잡 제어](../concepts/congestion-control.md). HTTP/3의 기반
 
 ## 다룬 토픽 목록
-- [[multiplexing-demultiplexing]]
-- [[UDP]]
-- [[TCP]]
-- [[reliable-data-transfer]]
-- [[congestion-control]]
-- [[flow-control]]
-- [[end-to-end-principle]]
-- [[QUIC]]
-- [[transport]]
+- [multiplexing-demultiplexing](../concepts/multiplexing-demultiplexing.md)
+- [UDP](../protocols/udp.md)
+- [TCP](../protocols/tcp.md)
+- [reliable-data-transfer](../concepts/reliable-data-transfer.md)
+- [congestion-control](../concepts/congestion-control.md)
+- [flow-control](../concepts/flow-control.md)
+- [end-to-end-principle](../concepts/end-to-end-principle.md)
+- [QUIC](../protocols/quic.md)
+- [transport](../layers/transport.md)
 
 ## 위키에 반영된 페이지
 - protocols/tcp.md (신규)

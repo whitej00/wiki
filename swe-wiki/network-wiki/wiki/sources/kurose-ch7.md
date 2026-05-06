@@ -71,15 +71,15 @@ last_updated: 2026-04-09
 
 | 토픽 | 위키 페이지 |
 |------|-----------|
-| 무선 링크 특성 | [[wireless-link-characteristics]] |
-| CDMA | [[cdma]] |
-| WiFi 802.11 | [[wifi-80211]] |
-| Bluetooth | [[bluetooth]] |
-| 셀룰러 네트워크 아키텍처 | [[cellular-network-architecture]] |
-| 4G LTE | [[lte]] |
-| 이동성 관리 | [[mobility-management]] |
+| 무선 링크 특성 | [wireless-link-characteristics](../concepts/wireless-link-characteristics.md) |
+| CDMA | [cdma](../concepts/cdma.md) |
+| WiFi 802.11 | [wifi-80211](../protocols/wifi-80211.md) |
+| Bluetooth | [bluetooth](../protocols/bluetooth.md) |
+| 셀룰러 네트워크 아키텍처 | [cellular-network-architecture](../concepts/cellular-network-architecture.md) |
+| 4G LTE | [lte](../protocols/lte.md) |
+| 이동성 관리 | [mobility-management](../concepts/mobility-management.md) |
 
 ## 위키 반영 페이지
 
-- 생성: [[wifi-80211]], [[bluetooth]], [[lte]], [[wireless-link-characteristics]], [[cdma]], [[mobility-management]], [[cellular-network-architecture]]
-- 업데이트: [[layers/link]], [[index]]
+- 생성: [wifi-80211](../protocols/wifi-80211.md), [bluetooth](../protocols/bluetooth.md), [lte](../protocols/lte.md), [wireless-link-characteristics](../concepts/wireless-link-characteristics.md), [cdma](../concepts/cdma.md), [mobility-management](../concepts/mobility-management.md), [cellular-network-architecture](../concepts/cellular-network-architecture.md)
+- 업데이트: [link](../layers/link.md), [index](../index.md)

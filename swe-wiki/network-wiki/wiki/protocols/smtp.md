@@ -84,4 +84,4 @@ SMTP는 push 프로토콜이므로 수신자가 메일을 **가져오는(pull)**
 
 ## 출처
 
-- [[kurose-ch2]] — Kurose 8판 2.3절
+- [kurose-ch2](../sources/kurose-ch2.md) — Kurose 8판 2.3절

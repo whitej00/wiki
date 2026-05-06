@@ -19,7 +19,7 @@ last_updated: 2026-04-09
 
 ## 4G LTE 아키텍처
 
-[[lte]] 참조. 주요 요소:
+[lte](../protocols/lte.md) 참조. 주요 요소:
 
 - Radio Access Network: eNode-B (기지국) ↔ Mobile Device
 - All-IP EPC (Enhanced Packet Core): S-GW, P-GW, MME, HSS
@@ -100,4 +100,4 @@ capacity = cell density × available spectrum × spectral efficiency
 
 ## 출처
 
-- [[kurose-ch7]] — Kurose 8판 7장 (7.4절)
+- [kurose-ch7](../sources/kurose-ch7.md) — Kurose 8판 7장 (7.4절)

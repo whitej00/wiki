@@ -33,7 +33,7 @@ d_end-to-end = N × (L/R)
 - 라우터는 패킷의 목적지 IP 주소의 일부를 **포워딩 테이블(forwarding table)**에서 조회하여 출력 링크를 결정
 - **라우팅 프로토콜**이 포워딩 테이블을 자동으로 설정
 
-## 패킷 교환 vs [[circuit-switching|회선 교환]]
+## 패킷 교환 vs [회선 교환](circuit-switching.md)
 
 | 비교 항목 | 패킷 교환 | 회선 교환 |
 |---|---|---|
@@ -48,4 +48,4 @@ d_end-to-end = N × (L/R)
 
 ## 출처
 
-- [[kurose-ch1]] — Kurose 8판 1.3절
+- [kurose-ch1](../sources/kurose-ch1.md) — Kurose 8판 1.3절

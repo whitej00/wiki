@@ -24,9 +24,9 @@ last_updated: 2026-04-09
 | 서비스 | 설명 |
 |--------|------|
 | **프레이밍(Framing)** | 네트워크 계층 데이터그램을 프레임에 캡슐화 (데이터 필드 + 헤더 필드) |
-| **링크 접근(Link Access)** | [[multiple-access\|매체 접근 제어(MAC)]] 프로토콜로 프레임 전송 규칙 조율 |
+| **링크 접근(Link Access)** | [매체 접근 제어(MAC)](../concepts/multiple-access.md) 프로토콜로 프레임 전송 규칙 조율 |
 | **신뢰적 전달(Reliable Delivery)** | ACK/재전송으로 오류 없는 전달 보장 (주로 무선 링크에서 사용, 유선은 불필요) |
-| **[[error-detection-correction\|오류 검출/정정]]** | 비트 오류를 검출하고, 경우에 따라 정정 (패리티, CRC 등) |
+| **[오류 검출/정정](../concepts/error-detection-correction.md)** | 비트 오류를 검출하고, 경우에 따라 정정 (패리티, CRC 등) |
 
 ## 링크 계층의 구현 위치
 
@@ -42,24 +42,24 @@ last_updated: 2026-04-09
 1. **점대점 링크(Point-to-Point Link)** — 한 송신자와 한 수신자 (예: 이더넷 스위치-호스트 연결, PPP)
 2. **브로드캐스트 링크(Broadcast Link)** — 여러 노드가 공유 채널에 연결 (예: 무선 LAN, 과거 이더넷 버스, HFC)
 
-브로드캐스트 링크에서는 [[multiple-access|다중 접속 문제]]가 발생하며, 이를 해결하기 위한 MAC 프로토콜이 필요하다.
+브로드캐스트 링크에서는 [다중 접속 문제](../concepts/multiple-access.md)가 발생하며, 이를 해결하기 위한 MAC 프로토콜이 필요하다.
 
 ## 주요 프로토콜 및 개념
 
 ### 유선
-- [[Ethernet]] — 가장 널리 사용되는 유선 LAN 기술
-- [[ARP]] — IP 주소를 [[mac-address|MAC 주소]]로 변환
-- [[link-layer-switching]] — 스위치의 self-learning과 필터링/포워딩
-- [[vlan]] — 가상 LAN으로 트래픽 격리
-- [[mpls]] — 라벨 기반 스위칭으로 링크 가상화
-- [[data-center-networking]] — 데이터 센터의 계층적 네트워크 구조
+- [Ethernet](../protocols/ethernet.md) — 가장 널리 사용되는 유선 LAN 기술
+- [ARP](../protocols/arp.md) — IP 주소를 [MAC 주소](../concepts/mac-address.md)로 변환
+- [link-layer-switching](../concepts/link-layer-switching.md) — 스위치의 self-learning과 필터링/포워딩
+- [vlan](../concepts/vlan.md) — 가상 LAN으로 트래픽 격리
+- [mpls](../concepts/mpls.md) — 라벨 기반 스위칭으로 링크 가상화
+- [data-center-networking](../concepts/data-center-networking.md) — 데이터 센터의 계층적 네트워크 구조
 
 ### 무선
-- [[wifi-80211]] — IEEE 802.11 무선 LAN (WiFi). CSMA/CA, link-layer ACK, RTS/CTS
-- [[bluetooth]] — Bluetooth (WPAN). 2.4 GHz FHSS, piconet
-- [[lte]] — 4G LTE 셀룰러 네트워크. OFDM, GTP 터널링
-- [[wireless-link-characteristics]] — 무선 링크 특성 (경로 손실, 간섭, 다중경로, SNR/BER)
-- [[cdma]] — 코드 분할 다중 접속 (CDMA)
+- [wifi-80211](../protocols/wifi-80211.md) — IEEE 802.11 무선 LAN (WiFi). CSMA/CA, link-layer ACK, RTS/CTS
+- [bluetooth](../protocols/bluetooth.md) — Bluetooth (WPAN). 2.4 GHz FHSS, piconet
+- [lte](../protocols/lte.md) — 4G LTE 셀룰러 네트워크. OFDM, GTP 터널링
+- [wireless-link-characteristics](../concepts/wireless-link-characteristics.md) — 무선 링크 특성 (경로 손실, 간섭, 다중경로, SNR/BER)
+- [cdma](../concepts/cdma.md) — 코드 분할 다중 접속 (CDMA)
 
 ## 무선 보안
 
@@ -69,10 +69,10 @@ last_updated: 2026-04-09
 - **5G 변경사항**: 홈 네트워크가 인증 결정권, IMSI 공개키 암호화 전송, AKA' 프로토콜 추가
 - 프로토콜 스택: EAP-TLS / EAP / EAPoL(무선 구간) + RADIUS(유선 구간)
 
-> 자세한 내용: [[kurose-ch8]] 8.8절
+> 자세한 내용: [kurose-ch8](../sources/kurose-ch8.md) 8.8절
 
 ## 출처
 
-- [[kurose-ch6]] — Kurose 8판 6장
-- [[kurose-ch7]] — Kurose 8판 7장 (무선 및 이동 네트워크)
-- [[kurose-ch8]] — Kurose 8판 8.8절 (무선/셀룰러 보안)
+- [kurose-ch6](../sources/kurose-ch6.md) — Kurose 8판 6장
+- [kurose-ch7](../sources/kurose-ch7.md) — Kurose 8판 7장 (무선 및 이동 네트워크)
+- [kurose-ch8](../sources/kurose-ch8.md) — Kurose 8판 8.8절 (무선/셀룰러 보안)

@@ -104,4 +104,4 @@ ISP 간 상업적 관계에 따라 BGP 경로 광고를 제어:
 4. 외부 사용자의 데이터그램이 BGP 경로를 따라 회사 서버에 도달
 
 ## 출처
-- [[kurose-ch5]]
+- [kurose-ch5](../sources/kurose-ch5.md)

@@ -121,7 +121,7 @@ net.ipv4.ip_local_port_range = 10240 65535
 
 ## 관련 페이지
 
-- [[use-method]] — USE 방법론
-- [[cloud-performance]] — 클라우드 네트워킹
-- [[bpf]] — BPF 기반 네트워크 도구
-- [[benchmarking]] — 네트워크 벤치마킹 (iperf, netperf)
+- [use-method](use-method.md) — USE 방법론
+- [cloud-performance](cloud-performance.md) — 클라우드 네트워킹
+- [bpf](../tools/bpf.md) — BPF 기반 네트워크 도구
+- [benchmarking](benchmarking.md) — 네트워크 벤치마킹 (iperf, netperf)

@@ -81,7 +81,7 @@ Query에서 나온 분석이나 비교를 영구 보존할 때 사용.
 ## 컨벤션
 
 - 파일명: 소문자 kebab-case (`congestion-control.md`)
-- 내부 링크: Obsidian 위키링크 사용 (`[[TCP]]`, `[[congestion-control]]`)
+- 내부 링크: Obsidian 위키링크 사용 (`[TCP](wiki/protocols/tcp.md)`, `[congestion-control](wiki/concepts/congestion-control.md)`)
 - 계층 참조: OSI 7계층과 TCP/IP 4계층 모델 병기. `layer` 프론트매터에는 TCP/IP 기준 사용 (application, transport, network, link)
 - 약어: 페이지 제목은 약어 사용 가능 (TCP, BGP 등). 본문 첫 등장 시 풀네임 병기.
 - 언어: 한국어로 작성. 기술 용어는 영문 병기 (e.g. 혼잡 제어(Congestion Control)).
@@ -110,7 +110,7 @@ Query에서 나온 분석이나 비교를 영구 보존할 때 사용.
 주기적으로 다음을 점검한다:
 - 페이지 간 모순
 - 인바운드 링크 없는 고아 페이지
-- 언급만 되고 페이지가 없는 개념 ([[missing-page]])
+- 언급만 되고 페이지가 없는 개념 ([missing-page](#missing-page))
 - 빠진 cross-reference
 - 프론트매터 누락/불일치
 - source_count가 0인 페이지 (출처 없는 주장)
@@ -121,18 +121,18 @@ Query에서 나온 분석이나 비교를 영구 보존할 때 사용.
 # 위키 인덱스
 
 ## 계층 (Layers)
-- [[transport]] — 전송 계층 개관
+- [transport](wiki/layers/transport.md) — 전송 계층 개관
 
 ## 프로토콜 (Protocols)
-- [[TCP]] — 신뢰성 있는 전송 프로토콜
-- [[UDP]] — 비연결형 전송 프로토콜
+- [TCP](wiki/protocols/tcp.md) — 신뢰성 있는 전송 프로토콜
+- [UDP](wiki/protocols/udp.md) — 비연결형 전송 프로토콜
 
 ## 개념 (Concepts)
-- [[congestion-control]] — 혼잡 제어 메커니즘
+- [congestion-control](wiki/concepts/congestion-control.md) — 혼잡 제어 메커니즘
 
 ## 비교 (Comparisons)
-- [[tcp-vs-udp]] — TCP와 UDP 비교
+- [tcp-vs-udp](#tcp-vs-udp) — TCP와 UDP 비교
 
 ## 소스 (Sources)
-- [[kurose-ch3]] — Kurose 교재 3장 요약
+- [kurose-ch3](wiki/sources/kurose-ch3.md) — Kurose 교재 3장 요약
 ```

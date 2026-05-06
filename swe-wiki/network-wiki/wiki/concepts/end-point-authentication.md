@@ -77,4 +77,4 @@ nonce + 공개키 암호를 사용하는 변형도 가능하지만, 교재에서
 
 ## 출처
 
-- [[kurose-ch8]] — Kurose 8판 8.4절
+- [kurose-ch8](../sources/kurose-ch8.md) — Kurose 8판 8.4절

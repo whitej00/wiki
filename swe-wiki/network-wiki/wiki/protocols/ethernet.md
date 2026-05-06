@@ -35,17 +35,17 @@ last_updated: 2026-04-08
 | 필드 | 크기 | 설명 |
 |------|------|------|
 | **프리앰블(Preamble)** | 8바이트 | 처음 7바이트 `10101010`: 수신 어댑터 클록 동기화. 마지막 바이트 `10101011`: 프레임 시작 알림 |
-| **목적지 주소(Dest Address)** | 6바이트 | 수신 어댑터의 [[mac-address\|MAC 주소]]. 일치하거나 브로드캐스트면 상위 전달, 아니면 폐기 |
+| **목적지 주소(Dest Address)** | 6바이트 | 수신 어댑터의 [MAC 주소](../concepts/mac-address.md). 일치하거나 브로드캐스트면 상위 전달, 아니면 폐기 |
 | **출발지 주소(Src Address)** | 6바이트 | 송신 어댑터의 MAC 주소 |
-| **타입(Type)** | 2바이트 | 상위 네트워크 계층 프로토콜 식별 (IP: `0x0800`, [[ARP]]: `0x0806`). 역다중화 역할 |
+| **타입(Type)** | 2바이트 | 상위 네트워크 계층 프로토콜 식별 (IP: `0x0800`, [ARP](arp.md): `0x0806`). 역다중화 역할 |
 | **데이터(Data)** | 46–1,500바이트 | IP 데이터그램 등 페이로드. MTU = 1,500바이트. 최소 46바이트 (부족 시 스터핑) |
-| **CRC** | 4바이트 | [[error-detection-correction\|CRC-32]]로 비트 오류 검출 |
+| **CRC** | 4바이트 | [CRC-32](../concepts/error-detection-correction.md)로 비트 오류 검출 |
 
 ## 이더넷의 서비스 특성
 
 - **비연결형(Connectionless)** — 핸드셰이크 없이 프레임 전송 (IP, UDP와 유사)
 - **비신뢰적(Unreliable)** — CRC 실패 시 프레임 폐기, ACK/NAK 없음. 상위 계층(TCP)이 재전송 담당
-- **CSMA/CD** — 전통적 이더넷의 [[multiple-access|매체 접근 제어]] 프로토콜. 현대 스위치 기반 이더넷에서는 충돌이 없으므로 실질적으로 불필요
+- **CSMA/CD** — 전통적 이더넷의 [매체 접근 제어](../concepts/multiple-access.md) 프로토콜. 현대 스위치 기반 이더넷에서는 충돌이 없으므로 실질적으로 불필요
 
 ## 이더넷 기술 표준
 
@@ -67,4 +67,4 @@ last_updated: 2026-04-08
 
 ## 출처
 
-- [[kurose-ch6]] — Kurose 8판 6장 (Section 6.4.2)
+- [kurose-ch6](../sources/kurose-ch6.md) — Kurose 8판 6장 (Section 6.4.2)

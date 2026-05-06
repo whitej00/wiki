@@ -18,8 +18,8 @@ last_updated: 2026-04-08
 | 계층 | PDU 명칭 | 역할 | 주요 프로토콜 |
 |---|---|---|---|
 | **Application** | 메시지(Message) | 네트워크 애플리케이션과 프로토콜 | HTTP, SMTP, FTP, DNS |
-| **Transport** | 세그먼트(Segment) | 프로세스 간 데이터 전달 | [[TCP]], [[UDP]] |
-| **Network** | 데이터그램(Datagram) | 호스트 간 데이터그램 라우팅 | [[IP]], 라우팅 프로토콜 |
+| **Transport** | 세그먼트(Segment) | 프로세스 간 데이터 전달 | [TCP](../protocols/tcp.md), [UDP](../protocols/udp.md) |
+| **Network** | 데이터그램(Datagram) | 호스트 간 데이터그램 라우팅 | [IP](#IP), 라우팅 프로토콜 |
 | **Link** | 프레임(Frame) | 인접 노드 간 데이터 전달 | 이더넷, WiFi, DOCSIS |
 | **Physical** | 비트(Bit) | 링크를 통한 개별 비트 이동 | 매체 종속적 |
 
@@ -49,4 +49,4 @@ OSI 모델은 인터넷 스택의 Application 계층을 3개로 세분화:
 
 ## 출처
 
-- [[kurose-ch1]] — Kurose 8판 1.5절
+- [kurose-ch1](../sources/kurose-ch1.md) — Kurose 8판 1.5절

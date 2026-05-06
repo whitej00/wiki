@@ -105,4 +105,4 @@ DOCSIS(Data-Over-Cable Service Interface Specifications)는 세 가지 접속 �
 
 ## 출처
 
-- [[kurose-ch6]] — Kurose 8판 6장 (Section 6.3)
+- [kurose-ch6](../sources/kurose-ch6.md) — Kurose 8판 6장 (Section 6.3)

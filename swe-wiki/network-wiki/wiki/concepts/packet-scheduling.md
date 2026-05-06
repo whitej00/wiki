@@ -62,4 +62,4 @@ Round Robin에 **가중치**를 부여한 일반화된 형태. 가장 널리 구
 2017년 FCC가 이 규칙을 완화. 논쟁은 현재 진행 중.
 
 ## 출처
-- [[kurose-ch4]]
+- [kurose-ch4](../sources/kurose-ch4.md)

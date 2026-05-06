@@ -126,7 +126,7 @@ echo 3 > /proc/sys/vm/drop_caches   # cold cache 벤치마크 시작점
 
 ## 관련 페이지
 
-- [[disk-performance]] — 디스크 I/O
-- [[memory-performance]] — 페이지 캐시
-- [[observability]] — 관측 도구 개요
-- [[bpf]] — BPF 기반 FS 분석 도구
+- [disk-performance](disk-performance.md) — 디스크 I/O
+- [memory-performance](memory-performance.md) — 페이지 캐시
+- [observability](observability.md) — 관측 도구 개요
+- [bpf](../tools/bpf.md) — BPF 기반 FS 분석 도구

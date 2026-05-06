@@ -131,4 +131,4 @@ last_updated: 2026-04-08
 - 알림(notification) 명세에도 사용
 
 ## 출처
-- [[kurose-ch5]]
+- [kurose-ch5](../sources/kurose-ch5.md)

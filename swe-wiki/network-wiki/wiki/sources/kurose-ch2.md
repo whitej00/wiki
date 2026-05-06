@@ -24,21 +24,21 @@ last_updated: 2026-04-08
 - **UDP 서비스**: 비연결, 비신뢰적, 최소한의 서비스
 - **TLS**: TCP 위에서 암호화/무결성/인증 제공 (애플리케이션 계층에서 구현)
 
-### 2.2 [[HTTP]]
+### 2.2 [HTTP](../protocols/http.md)
 - HTTP/1.0: 비지속 연결 (객체당 2 RTT)
 - HTTP/1.1: 지속 연결 + 파이프라이닝 (기본)
 - **HTTP 메시지 포맷**: 요청(method, URL, headers, body) / 응답(status code, headers, body)
 - **쿠키(Cookie)**: 무상태 HTTP에 사용자 상태 유지 (Set-cookie / Cookie 헤더)
 - **웹 캐시(프록시 서버)**: 응답 시간 감소, 트래픽 감소, Conditional GET (If-Modified-Since → 304 Not Modified)
-- **HTTP/2**: 단일 [[TCP]] 연결에서 HOL 블로킹 해결 (프레이밍, 인터리빙, 우선순위, 서버 푸시)
-- **HTTP/3**: [[QUIC]] ([[UDP]] 기반) 위에서 동작
+- **HTTP/2**: 단일 [TCP](../protocols/tcp.md) 연결에서 HOL 블로킹 해결 (프레이밍, 인터리빙, 우선순위, 서버 푸시)
+- **HTTP/3**: [QUIC](../protocols/quic.md) ([UDP](../protocols/udp.md) 기반) 위에서 동작
 
 ### 2.3 전자 메일
-- 3대 구성 요소: 사용자 에이전트, 메일 서버, **[[SMTP]]**
-- **SMTP** (RFC 5321): [[TCP]] 포트 25, push 프로토콜, 7비트 ASCII 제한, 지속 연결
+- 3대 구성 요소: 사용자 에이전트, 메일 서버, **[SMTP](../protocols/smtp.md)**
+- **SMTP** (RFC 5321): [TCP](../protocols/tcp.md) 포트 25, push 프로토콜, 7비트 ASCII 제한, 지속 연결
 - **메일 접근 프로토콜**: IMAP (RFC 3501), HTTP (Gmail 등)
 
-### 2.4 [[DNS]]
+### 2.4 [DNS](../protocols/dns.md)
 - **DNS 서비스**: 호스트명→IP 변환, 호스트 엘리어싱, 메일 서버 엘리어싱, 부하 분산
 - **분산 계층 데이터베이스**: Root → TLD → Authoritative DNS 서버
 - **Local DNS 서버**: ISP별 존재, 재귀+반복 질의 조합
@@ -51,10 +51,10 @@ last_updated: 2026-04-08
 - 분배 시간: CS = max{NF/u_s, F/d_min}, P2P = max{F/u_s, F/d_min, NF/(u_s + Σu_i)}
 - **BitTorrent**: 토렌트, 트래커, 256KB 청크, rarest first, tit-for-tat (unchoke/optimistic unchoke)
 
-### 2.6 비디오 스트리밍과 [[cdn|CDN]]
+### 2.6 비디오 스트리밍과 [CDN](../concepts/cdn.md)
 - **DASH** (Dynamic Adaptive Streaming over HTTP): 다중 비트레이트 인코딩, manifest 파일, 적응적 품질 선택
 - **CDN**: Enter Deep (ISP 내부에 소규모 클러스터) vs Bring Home (IXP에 대규모 클러스터)
-- CDN 동작: [[DNS]] 리다이렉트로 클러스터 선택
+- CDN 동작: [DNS](../protocols/dns.md) 리다이렉트로 클러스터 선택
 - 사례: Netflix (자체 CDN, Amazon 클라우드, push 캐싱), YouTube (Google CDN, pull 캐싱)
 
 ### 2.7 소켓 프로그래밍
@@ -63,11 +63,11 @@ last_updated: 2026-04-08
 
 ## 위키에 반영된 페이지
 
-- [[http]] — HTTP 프로토콜
-- [[smtp]] — SMTP 프로토콜
-- [[dns]] — DNS 프로토콜
-- [[cdn]] — 콘텐츠 분배 네트워크
-- [[layers/application]] — 애플리케이션 계층 개관
+- [http](../protocols/http.md) — HTTP 프로토콜
+- [smtp](../protocols/smtp.md) — SMTP 프로토콜
+- [dns](../protocols/dns.md) — DNS 프로토콜
+- [cdn](../concepts/cdn.md) — 콘텐츠 분배 네트워크
+- [application](../layers/application.md) — 애플리케이션 계층 개관
 
 ## 출처
 

@@ -178,9 +178,9 @@ $uts = $task->nsproxy->uts_ns->name;
 
 | 목적 | 도구 |
 |------|------|
-| 하드웨어 PMC 분석 | [[perf]] stat/record |
-| CPU Flame Graph | [[perf]] record + script |
-| 커널 함수 그래프 | [[ftrace]] function_graph |
+| 하드웨어 PMC 분석 | [perf](perf.md) stat/record |
+| CPU Flame Graph | [perf](perf.md) record + script |
+| 커널 함수 그래프 | [ftrace](ftrace.md) function_graph |
 | 커스텀 히스토그램 | bpftrace, Ftrace hist triggers |
 | 복잡한 프로덕션 도구 | BCC (Python/C) |
 | 빠른 원라이너 탐색 | bpftrace |
@@ -188,8 +188,8 @@ $uts = $task->nsproxy->uts_ns->name;
 
 ## 관련 페이지
 
-- [[perf]] — PMC와 프로파일링
-- [[ftrace]] — Ftrace 트레이서
-- [[observability]] — 관측 도구 개요
-- [[cpu-performance]] — CPU 분석에서의 BPF 활용
-- [[cloud-performance]] — 컨테이너에서의 BPF 제한
+- [perf](perf.md) — PMC와 프로파일링
+- [ftrace](ftrace.md) — Ftrace 트레이서
+- [observability](../concepts/observability.md) — 관측 도구 개요
+- [cpu-performance](../concepts/cpu-performance.md) — CPU 분석에서의 BPF 활용
+- [cloud-performance](../concepts/cloud-performance.md) — 컨테이너에서의 BPF 제한

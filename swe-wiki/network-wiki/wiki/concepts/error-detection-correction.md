@@ -70,4 +70,4 @@ last_updated: 2026-04-08
 
 ## 출처
 
-- [[kurose-ch6]] — Kurose 8판 6장 (Section 6.2)
+- [kurose-ch6](../sources/kurose-ch6.md) — Kurose 8판 6장 (Section 6.2)
